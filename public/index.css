@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+  
+  html, body {
+      height: 100%;
+      background-color: #1d2125;
+      color: white;
+  }
+  #root{
+    height: 100%;
+  }
+  .App {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  
+  .DragAndDrop {
+    font-family: sans-serif;
+    text-align: center;
+    background-color:#1d2125; 
+    color:white; 
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    height: 200px;
+    overflow: scroll;
+    width: 150px;
+    background-color: #a1bdd914;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .black-item {
+    background-color: #1d2125;
+    color:white;
+  }
+  .black-item:hover {
+    background-color: #323841;
+  }
+  .ToDo-item {
+    background-color: red;
+    color: white;
+  }
+  
+  .ToDo-item:hover {
+    border: 3px solid red;
+    background-color: white;
+    color: red;
+  }
+  
+  .Completed-item {
+    background-color: green;
+    color: black;
+  }
+  
+  .Completed-item:hover {
+    border: 3px solid green;
+    background-color: white;
+    color: green;
+  }
+  
+  .InProgress-item {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .InProgress-item:hover {
+    border: 3px solid yellow;
+    background-color: white;
+    color: black;
+  }
+  
+  .addButton {
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .searchBarIcon {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    color: #a1bdd914;
+    font-size: 20px;
+  }
+  
+  
+  .inputBox {
+    margin: 10px;
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+    background-color: #1d2125;
+    color: #b6beca;
+  }
+  
+  .searchBox {
+    margin: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+    background-color: #1d2125;
+    color: #b6beca;
+    outline-width: 0;
+    border-bottom: 3px solid #a1bdd914;
+  }
+  
+  .icon:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .r-c-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .r-c-c-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .r-c-fs-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .f-height{
+    height: 100%;
+  }
+  .flex-1{
+    flex-grow: 1;
+  }
+  .r-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .m-t-20 {
+    margin-top: 20px;
+  }
+  
+  .m-t-15 {
+    margin-top: 15px;
+  }
+  
+  .m-t-10 {
+    margin-top: 10px;
+  }
+  
+  .m-t-5 {
+    margin-top: 5px;
+  }
+  
+  .m-b-20 {
+    margin-bottom: 20px;
+  }
+  
+  .m-b-15 {
+    margin-bottom: 15px;
+  }
+  
+  .m-b-10 {
+    margin-bottom: 10px;
+  }
+  
+  .m-b-5 {
+    margin-bottom: 5px;
+  }
+  
+  .m-l-20 {
+    margin-left: 20px;
+  }
+  
+  .m-l-15 {
+    margin-left: 15px;
+  }
+  
+  .m-l-10 {
+    margin-left: 10px;
+  }
+  
+  .m-l-5 {
+    margin-left: 5px;
+  }
+  
+  .m-r-20 {
+    margin-right: 20px;
+  }
+  
+  .m-r-15 {
+    margin-right: 15px;
+  }
+  
+  .m-r-10 {
+    margin-right: 10px;
+  }
+  
+  .m-r-5 {
+    margin-right: 5px;
+  }
+  
+  .folder {
+    cursor: pointer;
+  }
+  .inputBoxFile {
+    border: none;
+  }
+  .inputBoxFile:focus {
+    outline-width: 0;
+    border-bottom: 1px solid black;
+  }
+  
+  .sigmar-regular {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rootmodal {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  
